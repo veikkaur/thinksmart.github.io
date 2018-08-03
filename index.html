@@ -3,114 +3,9 @@
 <head>
 <meta charset="utf-8">
 <title>ThinkSmart Homepage</title>
-<style>
-body {
-	background-color: rgb(0, 20, 50);
-	font-family: sans-serif;
-	margin: 0;
-}
-.heading {
-	color: rgb(0, 20, 50);
-	position: relative;
-	top: 10px;
-	background-color: white;
-	text-align: center;
-	border-radius: 5px;
-	width: 80%;
-	height: 90px;
-	margin: auto;
-	position: top;
-	opacity: 0.9;
-    z-index: 2;
-	}
-.heading #logo {
-	float: left;
-	padding: 5px;
-}
-.button {
-	background-color: white;
-	float: right;
-	margin-top: 20px;
-	margin-right: 20px;
-	font-size: 40px;
-	border-radius: 5px;
-}
-.button:hover {
-	opacity: 0.7;
-}
-.heading #home {
-	position: relative;
-	right: 28px;
-	top: 25px;
-}
-canvas {
-	background: rgb(0, 22, 52);
-	position: relative;
-	top:50px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-    width: 55%;
-    padding: 5px 20px;
-    margin: 8px;
-    display: inline-block;
-    box-sizing: border-box;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-    width: 30%;
-    margin: 10px 10px 5px 10px;
-}
-
-.container {
-    text-align: center;
-	color: rgb(0, 40, 100);
-	width:270px;
-    margin-left: auto;
-    margin-right: 50px;
-}
-
-span.psw {
-    padding: 5px 20px;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
-    padding-top: 140px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    width: 100%; /* Could be more or less, depending on screen size */
-}
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-}
-</style>
-<script src="canvas.js"></script>
-<script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--script src="java/canvas.js"></script>
+<script-->
 var modal = document.getElementById('id01');
 window.onclick = function(event) {
     if (event.target == modal) {
@@ -121,9 +16,9 @@ window.onclick = function(event) {
 </head>
 <body>
 <div class="heading">
-    <h1><img src = "thinkSmartLogo.png" alt = "logo", height=80px id = "logo">
+    <h1><img src = "image/thinkSmartLogo.png" alt = "logo", height=80px id = "logo">
 	<span id="home">Home</span>
-	<button  class="button" onclick="document.getElementById('id01').style.display='block'" style="width:50px;"><img src="lock.png" alt="lock" width="35px"></button></h1>
+	<button  class="button" onclick="document.getElementById('id01').style.display='block'" style="width:50px;"><img src="image/lock.png" alt="lock" width="35px"></button></h1>
 
 <div id="id01" class="modal">
 
@@ -181,7 +76,7 @@ window.onclick = function(event) {
    }
    //if false echo below
    else {
-    echo "<H2></H2>";
+    echo "<H2>Wrong Username or Password</H2>";
    }   
 ?-->
 </body>
